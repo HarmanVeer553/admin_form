@@ -1,0 +1,149 @@
+/* App container styles */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f0f0; /* Light gray background color */
+}
+
+/* Main content styles */
+main {
+  background: #fff; /* White background */
+  border-radius: 32px;
+  box-shadow: 10px 8px 6px 5px rgba(1, 0, 0, 0.1);
+  padding: 20px;
+  width: 900px; /* Doubled width for the form container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+/* Input and select styles */
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px; /* Increased gap between input fields */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Button styles */
+.button {
+  width: 48%;
+  padding: 10px;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.button.red {
+  background: #e74c3c;
+  margin-left: 17rem;
+  width: 30%;
+  padding :10px;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background: #2980b9;
+}
+
+/* List of users styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+/* User item styles */
+li {
+  background-color: #fff;
+  /* border: 1px solid #ccc; */
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Delete button styles */
+button.delete {
+  background-color: #e74c3c;
+  color: #fff;
+  width: 30%;
+  padding :10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button.delete:hover {
+  background-color: #c0392b;
+}
+
+/* Additional styles for the whole page */
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  background: transparent;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 900px; /* Doubled max-width for the form container */
+}
+
+/* Styles for positioning "Department" and "Position" in one line */
+.horizontal-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px; /* Increased gap between input fields */
+}
+
+.horizontal-row select,
+.horizontal-row input[type="text"] {
+  width: 48%;
+  margin-bottom: 10px; /* Increased gap between input fields */
+}
+
+/* Styles for centralizing input area for "Generate Email" and "Generate Random Password" */
+.email-password-input {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px; /* Increased gap between input fields */
+}
+
+.email-password-input button {
+  width: 48%;
+}
+
+/* Styles for "Generate Email" and "Generate Random Password" buttons */
+.button.generate {
+  background: #27ae60;
+}
+
+.button.generate:hover {
+  background: #218c53;
+}
